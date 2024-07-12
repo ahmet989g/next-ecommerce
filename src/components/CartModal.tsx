@@ -24,7 +24,7 @@ const CartModal = () => {
                                     {/* TITLE */}
                                     <div className="flex items-center justify-between gap-8">
                                         <h3 className="font-semibold">Product Name</h3>
-                                        <div className="p-1 bg-slate-200 rounded-md">$49</div>
+                                        <div className="p-1 bg-slate-200 rounded-md">₺49</div>
                                     </div>
                                     {/* DESC */}
                                     <div className="text-sm text-gray-500">
@@ -47,7 +47,7 @@ const CartModal = () => {
                                     {/* TITLE */}
                                     <div className="flex items-center justify-between gap-8">
                                         <h3 className="font-semibold">Product Name</h3>
-                                        <div className="p-1 bg-slate-200 rounded-md">$49</div>
+                                        <div className="p-1 bg-slate-200 rounded-md">₺49</div>
                                     </div>
                                     {/* DESC */}
                                     <div className="text-sm text-gray-500">
@@ -66,7 +66,7 @@ const CartModal = () => {
                     <div className="">
                         <div className="flex items-center justify-between font-semibold">
                             <span className="">Subtotal</span>
-                            <span className="">$49</span>
+                            <span className="">₺49</span>
                         </div>
                         <p className="text-gray-500 text-sm mt-2 mb-4">
                             Lorem ipsum dolor sit amet consectetur.

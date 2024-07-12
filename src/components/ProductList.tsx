@@ -23,7 +23,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
@@ -47,7 +47,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
@@ -71,7 +71,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
@@ -95,7 +95,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
@@ -119,7 +119,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
@@ -143,7 +143,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
@@ -167,7 +167,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
@@ -191,7 +191,7 @@ const ProductList = () => {
                 </div>
                 <div className="flex justify-between">
                     <div className="font-medium">Product Name</div>
-                    <div className="font-semibold">$49</div>
+                    <div className="font-semibold">₺49</div>
                 </div>
                 <div className="text-sm text-gray-500">My Description</div>
                 <button className="rounded-2xl ring-1 ring-lama text-lama w-max py-2 px-4 text-xs hover:bg-lama hover:text-white">Add to Cart</button>
