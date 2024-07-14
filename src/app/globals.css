@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --color-erden: #37B3BE;
+}
+
 .scrollbar-custom::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -19,7 +23,7 @@
 
 @supports not selector(::-webkit-scrollbar) {
   .scrollbar-custom {
-      scrollbar-color: #f35c7a
+      scrollbar-color: var(--color-erden)
                      #e5e7eb;
   }
 }
