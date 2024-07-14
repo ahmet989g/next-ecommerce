@@ -19,7 +19,7 @@ const Navbar = () => {
                 {/* LEFT */}
                 <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
                     <Link href="/" className="flex items-center gap-3">
-                        <Image src="/logo.png" alt="Logo" width={24} height={24} />
+                        <Image src="/logo-icon.png" alt="Logo" width={24} height={24} />
                         <div className="text-2xl tracking-wide">ERDEN</div>
                     </Link>
                     <div className="hidden xl:flex gap-4 ">
