@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+
+    const currentYear = new Date().getFullYear();
+
     return (
         <div className="py-24 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 bg-gray-100 text-sm mt-24">
             {/* TOP */}
@@ -84,7 +87,7 @@ const Footer = () => {
             </div>
             {/* BOTTOM */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
-                <div className="">© 2024 Erden Shop</div>
+                <div className="">© {currentYear} Erden Shop. All rights reserved. Transactions on this site are for testing purposes only and are not valid.</div>
             </div>
         </div>
     );
