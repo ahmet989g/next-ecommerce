@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
+/*
 const images = [
     {
         id: 0,
@@ -21,8 +22,13 @@ const images = [
         url: "https://fastly.picsum.photos/id/696/402/536.jpg?hmac=OaRH8tKHPjAkEC39UOnRcMFDpJ900qEPTFoypc9ueno"
     },
 ]
+*/
 
-const ProductImages = () => {
+type ProductImagesProps = {
+    items: any;
+}
+
+const ProductImages = ({ items }: ProductImagesProps) => {
 
     const [index, setIndex] = useState<number>(0);
 
@@ -30,7 +36,7 @@ const ProductImages = () => {
         <div className="">
             <div className="h-[500px] relative">
                 <Image
-                    src={images[index].url}
+                    src={items[index].image?.url}
                     alt=""
                     fill
                     sizes="50vw"
@@ -38,14 +44,14 @@ const ProductImages = () => {
                 />
             </div>
             <div className="flex justify-between gap-4 mt-8">
-                {images.map((item: any, i: number) => (
+                {items.map((item: any, i: number) => (
                     <div
-                        key={item.id}
+                        key={item._id}
                         className="w-1/4 h-32 relative gap-4 cursor-pointer"
                         onClick={() => setIndex(i)}
                     >
                         <Image
-                            src={item.url}
+                            src={item.image?.url}
                             alt="Products"
                             fill
                             sizes="30vw"
