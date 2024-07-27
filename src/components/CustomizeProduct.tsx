@@ -2,6 +2,7 @@
 
 import { products } from "@wix/stores";
 import { useEffect, useState } from "react";
+import Add from "./Add";
 
 type CustomizeProductProps = {
   productId: string;
@@ -108,6 +109,11 @@ const CustomizeProduct = ({ productId, variants, productOptions }: CustomizeProd
           </ul>
         </div>
       ))}
+      <Add
+        productId={productId!}
+        variantId={selectedVariant?._id || "00000000-000000-000000-000000000001"}
+        stockNumber={selectedVariant?.stock?.quantity || 0}
+      />
 
       {/*}
           <ul className="flex items-center gap-3">
