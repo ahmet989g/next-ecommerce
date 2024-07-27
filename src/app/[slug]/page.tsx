@@ -49,7 +49,13 @@ const SinglePage = async ({ params }: SinglePageProps) => {
           </div>
         )}
         <div className="h-[2px] bg-gray-100" />
-        <CustomizeProduct />
+        {product.variants && product.productOptions && (
+          <CustomizeProduct
+            productId={product._id ?? ""}
+            variants={product.variants}
+            productOptions={product.productOptions}
+          />
+        )}
         <Add />
         <div className="h-[2px] bg-gray-100" />
         {product.additionalInfoSections?.map((section: any) => (
