@@ -3,16 +3,18 @@ import Image from "next/image";
 import { wixClientServer } from "@/lib/wix/wixClientServer";
 import DOMPurify from "isomorphic-dompurify";
 import { products } from "@wix/stores";
+import Pagination from "./Pagination";
 
-const PRODUCT_PER_PAGE = 20;
+const PRODUCT_PER_PAGE = 8;
 
 type ProductListProps = {
   categoryId?: string;
   limit?: number;
   searchParams?: any;
+  isPaginationActive?: boolean;
 }
 
-const ProductList = async ({ categoryId, limit, searchParams }: ProductListProps) => {
+const ProductList = async ({ categoryId, limit, searchParams, isPaginationActive = false }: ProductListProps) => {
 
   const wixClient = await wixClientServer();
   const productQuery = wixClient.products
@@ -93,6 +95,13 @@ const ProductList = async ({ categoryId, limit, searchParams }: ProductListProps
           </button>
         </Link>
       ))}
+      {isPaginationActive && (
+        <Pagination
+          currentPage={res.currentPage || 0}
+          hasPrev={res.hasPrev()}
+          hasNext={res.hasNext()}
+        />
+      )}
     </div>
   );
 }

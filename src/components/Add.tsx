@@ -33,6 +33,13 @@ const Add = ({ productId, variantId, stockNumber }: AddProps) => {
                         {quantity}
                         <button className="cursor-pointer text-xl" onClick={() => handleQuantity("i")}>+</button>
                     </div>
+                    {stockNumber < 1 ? (
+                        <div className="text-sm text-red-500">Product is out of stock</div>
+                    ) : (
+                        <div className="text-sm">
+                            Only <span className="text-orange-500">{stockNumber} items</span> left!<br /> {"Don't"}{" "} miss it
+                        </div>
+                    )}
                     <div className="text-sm">
                         Only <span className="text-orange-500">{stockNumber} items</span> left!<br /> {"Don't"}{" "} miss it
                     </div>
