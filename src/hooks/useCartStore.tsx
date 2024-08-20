@@ -1,9 +1,9 @@
 import { create } from "zustand";
-import { currentCart } from "@wix/ecom";
+import { currentCart, cart } from "@wix/ecom";
 import { WixClient } from "@/context/wixContext";
 
 type CartState = {
-  cart: currentCart.Cart & { subtotal?: { amount: number } };
+  cart: currentCart.Cart;
   isLoading: boolean;
   counter: number;
   getCart: (wixClient: WixClient) => void;
