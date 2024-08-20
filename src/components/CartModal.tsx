@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useCartStore } from "@/hooks/useCartStore";
 import { media as wixMedia } from "@wix/sdk";
 import { useWixClient } from "@/hooks/useWixClient";
-import { currentCart } from "@wix/ecom";
 
 const CartModal = () => {
   // TEMPORARY
@@ -12,8 +11,6 @@ const CartModal = () => {
 
   const wixClient = useWixClient();
   const { cart, isLoading, removeItem } = useCartStore();
-
-  console.log('cart', cart);
 
   const handleCheckout = async () => {
     try {
@@ -107,7 +104,7 @@ const CartModal = () => {
           <div className="">
             <div className="flex items-center justify-between font-semibold">
               <span className="">Subtotal</span>
-              <span className="">${cart ? cart?.subtotal?.amount : 0}</span>
+              <span className="">${cart?.subtotal?.amount ?? 0}</span>
             </div>
             <p className="text-gray-500 text-sm mt-2 mb-4">
               Shipping and taxes calculated at checkout.
