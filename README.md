@@ -3,9 +3,9 @@
 Bu proje, Next.js ve modern web teknolojileri kullanarak geliştirdiğim bir e-ticaret web sitesidir. Projenin amacı, Next.js ile uygulama geliştirme yeteneklerimi pekiştirmek ve TypeScript, Tailwind CSS gibi araçlarla ileri düzey frontend geliştirme becerilerimi sergilemektir.
 
 
-## Lisans
+## Önizleme
 
-[Önizleme](https://next-ecommerce-five-sable.vercel.app/)
+[Site Önizlemesi](https://next-ecommerce-five-sable.vercel.app/)
 
   
 ## Özellikler
