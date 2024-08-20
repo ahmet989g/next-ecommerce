@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-commerce Web Uygulaması
 
-## Getting Started
+Bu proje, Next.js ve modern web teknolojileri kullanarak geliştirdiğim bir e-ticaret web sitesidir. Projenin amacı, Next.js ile uygulama geliştirme yeteneklerimi pekiştirmek ve TypeScript, Tailwind CSS gibi araçlarla ileri düzey frontend geliştirme becerilerimi sergilemektir.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Lisans
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Önizleme](https://next-ecommerce-five-sable.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  
+## Özellikler
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js: Sayfa yönlendirme, dinamik veri yönetimi ve uygulama durumu yönetimi için Context ve Zustand gibi güçlü araçlarla birlikte kullanıldı.
+- TypeScript: Tip güvenliği sağlayarak kodun daha okunabilir ve sürdürülebilir olmasını sağladı.
+- Tailwind CSS: Hızlı ve özelleştirilebilir kullanıcı arayüzü oluşturmak için tercih edildi.
+- Wix API: Ürün verileri ve alışveriş sepeti yönetimi gibi işlevsellikler için kullanıldı.
 
-## Learn More
+  
+## Kullanılan Teknolojiler
 
-To learn more about Next.js, take a look at the following resources:
+**İstemci:** Next.js, TypeScript, Zustand, Context, TailwindCSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Sunucu:** Wix
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    
+## Ekran Görüntüleri
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Uygulama Ekran Görüntüsü](https://media.licdn.com/dms/image/v2/D4D2DAQHTruz-agvPpA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1724148346827?e=1724756400&v=beta&t=5l_gPVhI8n6Ep-CWDek_tLcbdQh2W9PAj4a3rQhYDpE)
+![Uygulama Ekran Görüntüsü](https://media.licdn.com/dms/image/v2/D4D2DAQGn2H5LHXS3pQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1724148333225?e=1724756400&v=beta&t=rDeeZjhP0kq5DW-QlMDbbJhfn9ZiRl1rrV1-2xR-kRg)
+![Uygulama Ekran Görüntüsü](https://media.licdn.com/dms/image/v2/D4D2DAQEtgcbR2zDObg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1724148319846?e=1724756400&v=beta&t=1jl5w2FtNrwIpIAjlcofTBK0Rqxe_6kxDjsmya_XmaU)
+![Uygulama Ekran Görüntüsü](https://media.licdn.com/dms/image/v2/D4D2DAQGefOHYk19aUA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1724148306321?e=1724756400&v=beta&t=TTc6NJkJYBq1vFGluzhX0hAkECKGPV7LFRd2xKhFJ1U)
