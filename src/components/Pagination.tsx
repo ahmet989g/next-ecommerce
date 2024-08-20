@@ -2,6 +2,7 @@
 
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { Suspense } from "react";
 
 type PaginationProps = {
   currentPage: number;
@@ -22,20 +23,22 @@ const Pagination = ({ currentPage, hasPrev, hasNext }: PaginationProps) => {
 
   return (
     <div className="flex justify-between w-full">
-      <button
-        className="rounded-md bg-lama text-white p-2 text-sm w-24 cursor-pointer disabled:cursor-not-allowed disabled:bg-teal-200"
-        disabled={!hasPrev}
-        onClick={() => createPageUrl(currentPage - 1)}
-      >
-        Previous
-      </button>
-      <button
-        className="rounded-md bg-lama text-white p-2 text-sm w-24 cursor-pointer disabled:cursor-not-allowed disabled:bg-teal-200"
-        disabled={!hasNext}
-        onClick={() => createPageUrl(currentPage + 1)}
-      >
-        Next
-      </button>
+      <Suspense fallback={<div>Loading...</div>}>
+        <button
+          onClick={() => createPageUrl(currentPage - 1)}
+          disabled={!hasPrev}
+          className="px-4 py-2 rounded-md bg-gray-200"
+        >
+          Prev
+        </button>
+        <button
+          onClick={() => createPageUrl(currentPage + 1)}
+          disabled={!hasNext}
+          className="px-4 py-2 rounded-md bg-gray-200"
+        >
+          Next
+        </button>
+      </Suspense>
     </div>
   );
 }
